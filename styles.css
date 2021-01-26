@@ -1,0 +1,126 @@
+:root {
+  /* Custom colour variables */
+  /* *********************** */
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /* Custom variables for responsive width and height with viewport resizing */
+  /* *********************************************************************** */
+
+  --ratio: 350 / 360; /* Card width/height ratio: 350px/360px respectively */
+  --height: 85vmin;
+  --width: calc(var(--height) * var(--ratio));
+
+  /* Calculates root font-size at various viewport sizes */
+  /* ********************************************************* */
+
+  --font-size-ratio: 10 / 350; /* font-size 10px at --width 350px */
+  font-size: calc(var(--width) * var(--font-size-ratio));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url("/images/bg-pattern-top.svg"),
+    url("/images/bg-pattern-bottom.svg");
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat;
+}
+
+body, .age {
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  text-align: center;
+  background-color: #fff;
+  width: 35rem;
+  height: 36rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0.6rem 1.1rem 0.1rem rgba(0 ,0 ,0 , 0.3);
+}
+
+.profile-card-pattern {
+  width: 35rem;
+}
+
+.profile-photo {
+  border: 0.4rem solid #fff;
+  border-radius: 50%;
+  width: 10rem;
+  margin-top: -5.3rem;
+}
+
+.profile-name {
+  margin-bottom: 0;
+}
+
+.profile-name, .stats-heading {
+  color: var(--very-dark-desaturated-blue);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.profile-country {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+hr {
+  border-top: 0;
+}
+
+.profile-card-stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats {
+  flex: 0 1 15%;
+}
+
+.stats-heading {
+  margin-bottom: 0;
+}
+
+.stats>p {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.4rem;
+}
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--very-dark-desaturated-blue);
+}
+
+.attribution p {
+  color: var(--dark-grayish-blue);
+}
+
+@media only screen and (min-height: 424px) and (min-width: 424px) {
+  :root {
+    --height: 360px;
+  }
