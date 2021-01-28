@@ -4,72 +4,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="description" content="A fictional profile card for Victor Crest">
+  <meta name="author" content="Karen Blacktopp">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-  <title>Profile card component | Frontend Mentor</title>
+  <title>Profile card component | Frontend Mentor Challenge</title>
 
 </head>
 
-<body>
+<body class="container">
 
-  <main class="container">
+  <main class="profile-card">
 
-    <section class="profile-card">
+    <img src="images/bg-pattern-card.svg" alt="Background for top of profile card" class="profile-card-pattern">
 
-      <img src="images/bg-pattern-card.svg" alt="Background for top of profile card" class="profile-card-pattern">
+    <img class="profile-photo" src="images/image-victor.jpg" alt="Profile Photo of Victor Crest">
 
-      <article>
+    <h1 class="profile-name">Victor Crest <span class="age">26</span></h1>
+    <p class="profile-country">London</p>
 
-        <img class="profile-photo" src="images/image-victor.jpg" alt="Profile Photo of Victor Crest">
+    <hr>
 
-        <header>
-          <h1 class="profile-name">Victor Crest <span class="age">26</span></h1>
-        </header>
+    <article class="profile-card-stats">
 
-        <p class="profile-country">London</p>
+      <div class="stats">
 
-      </article>
+        <h2 class="stats-heading">80K</h2>
+        <p class="stats-type">Followers</p>
 
-      <hr>
+      </div>
 
-      <article class="profile-card-stats">
+      <div class="stats">
 
-        <div class="stats" role="contentinfo">
-          <h3 class="stats-heading">80K</h3>
-          <p>Followers</p>
-        </div>
+        <h2 class="stats-heading">803K</h2>
+        <p class="stats-type">Likes</p>
 
-        <div class="stats" role="contentinfo">
-          <h3 class="stats-heading">803K</h3>
-          <p>Likes</p>
-        </div>
+      </div>
 
-        <div class="stats" role="contentinfo">
-          <h3 class="stats-heading">1.4K</h3>
-          <p>Photos</p>
-        </div>
+      <div class="stats">
 
-      </article>
+        <h2 class="stats-heading">1.4K</h2>
+        <p class="stats-type">Photos</p>
 
-    </section>
+      </div>
 
-    <!-- Footer -->
-    <footer class="attribution">
-
-      <p>
-        <small>
-          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-          Coded by <a href="https://github.com/savageskynet/Profile-card-component">SavageSkyNet</a>.
-        </small>
-      </p>
-
-    </footer>
+    </article>
 
   </main>
+
+  <!-- Footer -->
+  <footer class="attribution">
+
+    <p>
+      <small>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/savageskynet/Profile-card-component">SavageSkyNet</a>.
+      </small>
+    </p>
+
+  </footer>
 
 </body>
 
